@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+<title>Cis101web</title>
+
+<head>
+    <script>
+        function display() {
+            var chosenNum = document.getElementById("enterNumber").value;
+            chosenNum;
+            if (chosenNum == 1) {
+                alert("You have chosen Fatima, present the number 2324 to our clerk");
+            } else if (chosenNum == 2) {
+                alert("You have chosen Black Panther, present the number 2314 to our clerk");
+            } else if (chosenNum >= 3) {
+                alert("this selection is unnavailable");
+            }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+<div class="nav">
+
+    <ul>
+        <li><img src="cine.jpg" class="logo"></img></li>
+        <li><a id="Dubois" href="">Cinema Dubois</a></li>
+    </ul>
+
+</div>
+<div class="row">
+    <div class="col-lg-6" id="Intro">
+        <h1>Welcome to the cinema Dubois</h1>
+        <h4>An institute established in 1920, now premiering Fatima and the Black panther, proudly gifting tickets for
+            our patrons.</h4>
+    </div>
+    <div class="col-lg-6">
+        <img src="fatima.jpg" width="400px" height="390px" id="fatma" />
+
+    </div>
+
+</div>
+<div class="program">
+    <div class="Congrats">
+        <h3>Congratulations, you have been chosen to win tickets for our newly listed movies</h3>
+        <p>Using the form below, you may input a number either 1 or 2, each number is associated to one of the featured
+            movies, but here's the catch.. You can only know which upon entering your number. Good luck.</p>
+    </div>
+    <div class="enter">
+        <form>
+            <label for="enterNumber">Enter a number, 1 or 2:</label>
+            <input type="text" id="enterNumber" name="enterNumber" />
+            <input type="submit" value="submit" onclick="display()" />
+        </form>
+    </div>
+
+</div>
+<div class="Credits">
+    <h6>This website represents a purely fictional entity</h6>
+    <h6>As part of Cis 101, at the city colleges of Chicago</h6>
+
+</div>
+
+
+
+
+
+
+</html>
